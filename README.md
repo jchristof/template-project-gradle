@@ -25,7 +25,7 @@ ev3dev java: https://github.com/ev3dev-lang-java
 Image here:
 https://www.ev3dev.org/docs/getting-started/
 
-###Flash os image to sd card
+### Flash os image to sd card
 
 In the boot partition, open the config.txt file. Modify the contents per the instructions. 
 Eject the sd card partitions using the safe eject.
