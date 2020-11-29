@@ -7,6 +7,7 @@ plugins {
     id "net.ossindex.audit" version "0.4.5-beta"
     id "com.github.johnrengelman.shadow" version "4.0.3"
     id 'org.hidetake.ssh' version '2.10.1'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.20'
 }
 
 version = '2.6.0'
@@ -21,6 +22,8 @@ repositories {
 dependencies {
     implementation("org.slf4j:slf4j-simple:1.7.25")
     implementation("com.github.ev3dev-lang-java:ev3dev-lang-java:2.5.3")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
 }
 
 apply from: './config.gradle'
@@ -29,8 +32,8 @@ compileJava.options.encoding = 'UTF-8'
 
 //Compile
 compileJava {
-    sourceCompatibility = 11
-    targetCompatibility = 11
+    sourceCompatibility = 8
+    targetCompatibility = 8
 }
 
 //Jar
@@ -49,3 +52,13 @@ fatJar.dependsOn shadowJar
 
 apply from: './config.gradle'
 apply from: './gradle/deploy.gradle'
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
