@@ -150,5 +150,5 @@ remoteRun - executes the code on the Pi
 Check the contents of the Pi's /home/robot directory. The jar file for the app that was just executed should exist there now.
 
 Helpful command line commands
-ev3dev-sysinfo
-sudo update-brickpi3-fw
+- ev3dev-sysinfo
+- sudo update-brickpi3-fw
