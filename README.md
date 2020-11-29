@@ -1,4 +1,4 @@
-#Kotlin on BrickPi3 + RPi3b
+# Kotlin on BrickPi3 + RPi3b
 
 The objective of this project is to:
 - Provide an example of Kotlin running on the BrickPi3 board attached to a RPi 3
@@ -7,7 +7,7 @@ The objective of this project is to:
 I have not tested this with an EV3 or other boards, but the code may work for this
 hardware without many modifications.
 
-###Changes to the original ev3dev-lang-java template project
+### Changes to the original ev3dev-lang-java template project
 - Modified the project build.gradle to include support for Kotlin and Coroutines
 - Modified build.grade for source compatibility with Java *
 - Update gradle to latest version
@@ -20,7 +20,7 @@ ev3dev git: https://github.com/ev3dev
 
 ev3dev java: https://github.com/ev3dev-lang-java
 
-###Get the Debian Stretch ev3dev os
+### Get the Debian Stretch ev3dev os
 
 Image here:
 https://www.ev3dev.org/docs/getting-started/
@@ -58,7 +58,7 @@ Also, (on Pi) cat /boot/flash/config.txt file should be present and contain the 
 
 If either of these are unavailable, most likely the config.txt edit was not successful - go back to that step and start over
 
-###Install Java on Debian Stretch 
+### Install Java on Debian Stretch 
 
 Stretch does not come installed with a JVM. Install Java to run Java apps.
 https://github.com/ev3dev-lang-java/installer
@@ -91,7 +91,7 @@ OpenJDK Runtime Environment (build 11.0.6+10-post-Debian-1bpo91)
 OpenJDK Server VM (build 11.0.6+10-post-Debian-1bpo91, mixed mode, sharing)
 ```
 
-###Compile and run a Kotlin app on the Pi
+### Compile and run a Kotlin app on the Pi
 
 
 Get the Java code template project here:
